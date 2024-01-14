@@ -212,7 +212,9 @@ function handleAddUser() {
 
 function handleDeleteUser({ id }) {
   selectEl.value = "";
-  const deleteConfirmation = confirm("Are you sure you want to delete a user?");
+  const deleteConfirmation = confirm(
+    "Are you sure you want to delete this user?"
+  );
   deleteConfirmation &&
     ((users = users.filter((user) => user.id !== id)),
     localStorage.setItem("users", JSON.stringify(users)),
