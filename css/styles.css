@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding-top: 10rem;
+}
+.container .modal_container {
+  position: fixed;
+  left: 50%;
+  top: 40%;
+  z-index: 3;
+  transform: translate(-50%, -50%);
+  border: none;
+  border-radius: 0.6rem;
+}
+.container .modal_container::backdrop {
+  background: rgba(0, 0, 0, 0.3);
+}
+.container .modal_container #modal_box {
+  width: max-content;
+  background: #fff;
+  border: none;
+  border-radius: 0.6rem;
+  padding: 1rem;
+  height: 100%;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 34, 0.4);
+}
+.container .modal_container #modal_box input[type="text"],
+.container .modal_container #modal_box input[type="email"] {
+  width: 350px;
+  max-width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #002;
+  border-radius: 6px;
+  display: block;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #002;
+}
+.container .modal_container #modal_box input[type="text"]:focus,
+.container .modal_container #modal_box input[type="email"]:focus {
+  border-width: 2px;
+  font-size: 1.05rem;
+}
+.container .modal_container #modal_box input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  accent-color: teal;
+  margin-right: 10px;
+}
+.container .modal_container #modal_box label {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
+  text-transform: capitalize;
+  font: 500 1.2rem "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #002;
+}
+.container .modal_container #modal_box .submit_btn {
+  display: block;
+  margin-top: 1rem;
+  width: 100%;
+  padding: 10px 0;
+  border: 2px solid #002;
+  outline: none;
+  border-radius: 6px;
+  background: #002;
+  color: #fff;
+  font: 700 1rem Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+.container .modal_container #modal_box .submit_btn:active {
+  background: #fff;
+  color: #002;
+}
+.container .add_btn {
+  width: 100%;
+  display: block;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  border: none;
+  outline: none;
+  border: 2px outset #002;
+  background: #002;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  font: 500 1.2rem Arial, Helvetica, sans-serif;
+}
+.container .add_btn:hover {
+  background: #fff;
+  color: #002;
+}
+.container .search_input {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: 2px solid #002;
+  font-size: 1.2rem;
+}
+.container .search_input:focus {
+  border-color: #004;
+}
+.container .filter_users {
+  align-self: start;
+  width: 100%;
+  padding: 0.8rem 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  outline: none;
+  border: 2px solid #002;
+  color: #002;
+}
+.container .user_wrapper {
+  width: 500px;
+  max-width: 100%;
+}
+.container .user_wrapper h2 {
+  font: 500 2rem cursive, sans-serif;
+}
+.container .user_wrapper > li {
+  width: 100%;
+  padding: 1rem;
+  background: #e9f0f1;
+  margin-bottom: 1rem;
+  list-style: none;
+  border-radius: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .user_wrapper > li .left_side .user_name {
+  font: 500 1.5rem Arial, Helvetica, sans-serif;
+  color: #002;
+}
+.container .user_wrapper > li .left_side .user_status {
+  padding: 0.2rem 0.5rem;
+  color: #e9f0f1;
+  margin-left: 0.5rem;
+  text-transform: uppercase;
+  font: 500 1rem "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #000;
+  border-radius: 0.4rem;
+}
+
+.container .user_wrapper > li .left_side .user_status.active {
+  background: #008000;
+}
+.container .user_wrapper > li .left_side .user_status.inactive {
+  background: #e00000;
+}
+.container .user_wrapper > li .left_side .user_email {
+  display: block;
+  margin-top: 0.7rem;
+  font: 400 1rem Verdana, Geneva, Tahoma, sans-serif;
+  color: #444444;
+}
+.container .user_wrapper > li .right_side button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+.container .user_wrapper > li .right_side .edit_btn {
+  color: #f5af2f;
+  margin-right: 0.8rem;
+}
+.container .user_wrapper > li .right_side .delete_btn {
+  color: #ff1f1f;
+}
+.container .user_wrapper > li .right_side .edit_btn:hover,
+.container .user_wrapper > li .right_side .delete_btn:hover {
+  border-bottom: 1px solid;
+  opacity: 0.7;
+}
+
+/*# sourceMappingURL=styles.css.map */
